@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #00AA;
+  }
+  
+  .grid-main {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  
+    grid-template-areas:
+        "boutton boutton"
+        "nombre calcul";
+  
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 100px;
+  }
+  
+  .nombre {
+    grid-area: nombre;
+  }
+  
+  .nombre {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+  }
+
+  .boutton {
+    grid-area: boutton;
+  }
+  
+  .boutton {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: 100px;
+}
+  
+  .calcul {
+    grid-area: calcul
+  }
+  
+  .calcul {
+    display: grid;
+  }
+  
+  .grid-main div {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 3rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(167, 78, 78, 0.75);
+  }
